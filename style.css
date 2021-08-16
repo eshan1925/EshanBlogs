@@ -113,7 +113,7 @@ h3{
 
 
 
-.contact {
+/* .contact {
     position: relative;
     width: 100%;
     height: 35vh;
@@ -122,7 +122,7 @@ h3{
     align-items: center;
     justify-content: center;
     text-align: center;
-}
+} 
 
 .contact h2 {
     color: white;
@@ -165,4 +165,136 @@ h3{
 }
 hr{
     color:azure
+}
+*/
+
+
+/* Adding some extra css and responsive to your site by nitish */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.homepage{
+    margin: 0;
+    padding: 30px 100px;
+}
+h1{
+    margin: 20px 0px;
+}
+.content{
+    padding: 10px 15px;
+    font-family: 'Poppins';
+}
+.read button{
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    transition: all 0.5s;
+}
+.read button:hover{
+    background-color: gray;
+}
+.navigation-buttons a{
+    margin: 2px;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top:20px ;
+}
+.contact .items{
+    width: 100%;
+    padding: 5px 10px;
+}
+.contact h2{
+    color: #fff;
+}
+.contact h3{
+    color: wheat;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 4px 0;
+    height: 65px;
+}
+.links a{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 6px;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    margin-top: 5px;
+    flex-wrap: wrap;
+}
+.copyright p{
+    margin: 0 7px;
+}
+hr{
+    color: azure;
+    margin: 0;
+    margin-bottom: 3px;
+}
+
+/* media query for responsive */
+
+@media (max-width:900px){
+    .homepage{
+        padding: 20px 50px;
+    }
+}
+@media (max-width:800px){
+    h1{
+        font-size: 35px;
+        height: 100%;
+    }
+    h3{
+        font-size: 27px;
+    }
+    .content{
+        font-size: 20px;
+    }
+}
+@media (max-width:500px){
+    .main img{
+        width: 100px;
+        height: 100px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    h3{
+        font-size: 23px;
+    }
+    .homepage{
+        padding: 20px;
+    }
+    .content{
+        font-size: 18px;
+    }
+    #button-cmd{
+        height: 100%;
+    }
+    .links{
+        height: 110px;
+    }
+    .links a{
+        margin:  0 4px;
+    }
+    .copyright p{
+        font-size: 15px;
+    }
 }
