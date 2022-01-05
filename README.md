@@ -1,2 +1,2 @@
 # EshanBlogs
-This is a personal Blogging Website for Eshan Gupta.
+This is a personal static Blogging Website for Eshan Gupta.
